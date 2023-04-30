@@ -168,6 +168,8 @@ function App() {
                     const value = Object.values(data);
                     alert(value);
                 }
+                setAddNewProduct({});
+                setStep(1);
             });
     }
 
