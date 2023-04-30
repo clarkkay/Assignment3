@@ -22,6 +22,14 @@ app.get("/", async (req, resp) => {
     resp.send(allProducts);
 });
 
+app.get("/:id", async (req, resp) => {
+    const id = req.params.id;
+    const query = { _id: id };
+    const oneProduct = await Product.findOne(query);
+    console.log(oneProduct);
+    resp.send(oneProduct);
+});
+
 
 
 app.post("/insert", async (req, res) => {
