@@ -12,11 +12,13 @@ function App() {
   //show all items
   const showAllItems = product.map((el) => (
     <div key={el._id}>
-      <img src={el.image} width={30} /> <br />
+      <img class="prodImg" src={el.image} width={100} alt="prod"/> <br />
+      <p class="details">
       Title: {el.title} <br />
       Category: {el.category} <br />
       Price: {el.price} <br />
       Rate :{el.rating.rate} and Count:{el.rating.count} <br />
+      </p>
     </div>
   ));
   // new Product
@@ -32,11 +34,18 @@ function App() {
 
   const showOneItem = oneProduct.map((el) => (
     <div key={el._id}>
-      <img src={el.image} width={30} /> <br />
+      <img class="prodImg"src={el.image} width={100} alt="prod"/> <br />
+      <p class="details">
       Title: {el.title} <br />
       Category: {el.category} <br />
       Price: {el.price} <br />
       Rate :{el.rating.rate} and Count:{el.rating.count} <br />
+      <br />
+      </p>
+      <div id="updateButton">
+      <button>Update Price</button>
+      </div>
+      {/* onClick={() => updatePrice()} */}
     </div>
   ));
   function getAllProducts() {
@@ -194,8 +203,8 @@ function App() {
         <h3>Show all available Products.</h3>
         <button id="getAllButton" onClick={() => getAllProducts()}>Show All products</button>
         <hr></hr>
-        {viewer1 && <div>Products {showAllItems}</div>}
-        {viewer2 && <div>Product: {showOneItem}</div>}
+        {viewer1 && <div>{showAllItems}</div>}
+        {viewer2 && <div>{showOneItem}</div>}
         <hr></hr>
       </div>
 
