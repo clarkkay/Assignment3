@@ -29,6 +29,10 @@ app.get("/:id", async (req, resp) => {
     console.log(oneProduct);
     resp.send(oneProduct);
 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> ec9de368b0d76d4bf9429aa0f688410e7102b618
 
 
 app.post("/insert", async (req, res) => {
