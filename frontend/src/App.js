@@ -48,10 +48,12 @@ function App() {
         setProduct(data);
       });
     setViewer1(!viewer1);
+    setViewer2(false);
   }
   function getOneProduct(id) {
     console.log(id);
     if (id >= 1 && id <= 20) {
+    setViewer2(!viewer2);
       fetch("http://localhost:4000/" + id)
         .then((response) => response.json())
         .then((data) => {
@@ -62,6 +64,7 @@ function App() {
           setOneProduct(dataArr);
         });
       setViewer2(!viewer2);
+      setViewer1(false);
     } else {
       console.log("Wrong number of Product id.");
     }
@@ -183,7 +186,6 @@ function App() {
           placeholder="id"
           onChange={(e) => getOneProduct(e.target.value)}
         />
-        {viewer2 && <div>Product: {showOneItem}</div>}
         <hr></hr>
       </div>
       <hr></hr>
@@ -193,6 +195,7 @@ function App() {
         <button id="getAllButton" onClick={() => getAllProducts()}>Show All products</button>
         <hr></hr>
         {viewer1 && <div>Products {showAllItems}</div>}
+        {viewer2 && <div>Product: {showOneItem}</div>}
         <hr></hr>
       </div>
 

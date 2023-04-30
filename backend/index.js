@@ -29,11 +29,21 @@ app.get("/:id", async (req, resp) => {
     console.log(oneProduct);
     resp.send(oneProduct);
 });
-<<<<<<< HEAD
-=======
 
->>>>>>> ec9de368b0d76d4bf9429aa0f688410e7102b618
 
+app.delete("/delete", async (req, res) => {
+    console.log("Delete :", req.body);
+    try {
+        const query = { _id: req.body._id };
+        await Product.deleteOne(query);
+        const messageResponse = {
+            message: `Product ${req.body._id} deleted correctly`,
+        };
+        res.send(JSON.stringify(messageResponse));
+    } catch (err) {
+        console.log("Error while deleting :" + p_id + " " + err);
+    }
+});
 
 app.post("/insert", async (req, res) => {
     console.log(req.body);
