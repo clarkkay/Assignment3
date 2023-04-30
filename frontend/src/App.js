@@ -232,58 +232,56 @@ function App() {
                 <hr></hr>
             </div>
             <div>
-                {/* <h3>Add a new product :</h3>
-                <form action="">
-                    <input type="number" placeholder="id?" name="_id" value={addNewProduct._id} onChange={handleChange} />
-                    <input type="text" placeholder="title?" name="title" value={addNewProduct.title} onChange={handleChange} />
-                    <input type="number" placeholder="price?" name="price" value={addNewProduct.price} onChange={handleChange} />
-                    <input type="text" placeholder="description?" name="description" value={addNewProduct.description} onChange={handleChange} />
-                    <input type="text" placeholder="category?" name="category" value={addNewProduct.category} onChange={handleChange} />
-                    <input type="text" placeholder="image?" name="image" value={addNewProduct.image} onChange={handleChange} />
-                    <input type="number" placeholder="rate?" name="rate" value={addNewProduct.rating.rate} onChange={handleChange} />
-                    <input type="number" placeholder="count?" name="count" value={addNewProduct.rating.count} onChange={handleChange} />
-                    <button type="submit" onClick={handleOnSubmit}>
-                        submit
-                    </button>
-                </form> */}
-            </div>
-            <div>
-                {step === 1 && (
-                    <div>
-                        <h2>Add a new product:</h2>
-                        <label htmlFor="_id">Id:</label>
-                        <input type="number" placeholder="id?" name="_id" value={addNewProduct._id} onChange={handleChange} />
-                        <button onClick={() => submitNext()}>Next</button>
-                    </div>
-                )}
-
-                {step === 2 && (
-                    <div>
-                        <h2>Add a new product:</h2>
-                        <label htmlFor="title">Title:</label>
-                        <input type="text" placeholder="title?" name="title" value={addNewProduct.title} onChange={handleChange} />
-                        <button onClick={() => submitPrev()}>Prev</button>
-                        <button onClick={() => submitNext()}>Next</button>
-                    </div>
-                )}
-                {step === 3 && (
-                    <div>
-                        <h2>Add a new product:</h2>
-                        <label htmlFor="price">Price:</label>
-                        <input type="number" placeholder="price?" name="price" value={addNewProduct.price} onChange={handleChange} />
-                        <button onClick={() => submitPrev()}>Prev</button>
-                        <button onClick={() => submitNext()}>Next</button>
-                    </div>
-                )}
-                {step === 4 && (
-                    <div>
-                        <h2>Add a new product:</h2>
-                        <label htmlFor="description">Description:</label>
-                        <input type="number" placeholder="description?" name="description" value={addNewProduct.description} onChange={handleChange} />
-                        <button onClick={() => submitPrev()}>Prev</button>
-                        <button onClick={() => submitNext()}>Next</button>
-                    </div>
-                )}
+                <h3>Add New Product</h3>
+                <form onSubmit={handleOnSubmit}>
+                    {step === 1 && (
+                        <div>
+                            <label>
+                                Product ID:
+                                <input type="text" name="_id" value={addNewProduct._id} onChange={handleChange} />
+                            </label>
+                            <br />
+                            <label>
+                                Product Title:
+                                <input type="text" name="title" value={addNewProduct.title} onChange={handleChange} />
+                            </label>
+                            <br />
+                            <button onClick={() => submitNext()}>Next</button>
+                        </div>
+                    )}
+                    {step === 2 && (
+                        <div>
+                            <label>
+                                Product Price:
+                                <input type="text" name="price" value={addNewProduct.price} onChange={handleChange} />
+                            </label>
+                            <br />
+                            <label>
+                                Product Description:
+                                <textarea name="description" value={addNewProduct.description} onChange={handleChange} />
+                            </label>
+                            <br />
+                            <button onClick={() => submitPrev()}>Prev</button>
+                            <button onClick={() => submitNext()}>Next</button>
+                        </div>
+                    )}
+                    {step === 3 && (
+                        <div>
+                            <label>
+                                Product Category:
+                                <input type="text" name="category" value={addNewProduct.category} onChange={handleChange} />
+                            </label>
+                            <br />
+                            <label>
+                                Product Image URL:
+                                <input type="text" name="image" value={addNewProduct.image} onChange={handleChange} />
+                            </label>
+                            <br />
+                            <button onClick={() => submitPrev()}>Prev</button>
+                            <button type="submit">Submit</button>
+                        </div>
+                    )}
+                </form>
             </div>
             <div>
                 <h3>Delete one product:</h3>
