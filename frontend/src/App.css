@@ -25,13 +25,14 @@
   /* text-align: right; */
 }
 
-#allProd > #getAllButton {
+#allProd button{
   color: white;
   background-color: #ff9d16;
   /* text-align: right; */
   float: left;
   margin-top: -2rem;
 }
+
 h3 {
   font-size: 2rem;
   color: white;

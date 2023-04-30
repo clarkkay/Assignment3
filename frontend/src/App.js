@@ -231,8 +231,8 @@ function App() {
       </div>
       <hr></hr>
       <div class="body">
-      <div>
-        <h3 id="allProd">Show all available Products.</h3>
+      <div id="allProd">
+        <h3>Show all available Products.</h3>
         <button id="getAllButton" onClick={() => getAllProducts()}>Show All products</button>
         <hr></hr>
         {viewer1 && <div>Products {showAllItems}</div>}
