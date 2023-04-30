@@ -12,6 +12,7 @@ function App() {
   //show all items
   const showAllItems = product.map((el) => (
     <div key={el._id}>
+      <hr></hr>
       <img class="prodImg" src={el.image} width={100} alt="prod"/> <br />
       <p class="details">
       Title: {el.title} <br />
@@ -202,7 +203,6 @@ function App() {
       <div id="allProd">
         <h3>Show all available Products.</h3>
         <button id="getAllButton" onClick={() => getAllProducts()}>Show All products</button>
-        <hr></hr>
         {viewer1 && <div>{showAllItems}</div>}
         {viewer2 && <div>{showOneItem}</div>}
         <hr></hr>
