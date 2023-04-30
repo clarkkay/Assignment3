@@ -21,14 +21,12 @@
 }
 
 #allProd > h3{
-  font-family: cursive;
-  /* text-align: right; */
+  font-family: cursive; 
 }
 
 #allProd button{
   color: white;
   background-color: #ff9d16;
-  /* text-align: right; */
   float: left;
   margin-top: -2rem;
 }
