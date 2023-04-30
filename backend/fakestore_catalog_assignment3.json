@@ -5,7 +5,7 @@
     "price": 537.00,
     "description": "Reborn electronics are like new — just better for the planet and your pocket. Our sellers are electronics experts who test and verify that every device is clean and 100% functional before it goes out for delivery. You get what it says on the box or your money back.",
     "category": "Apple",
-    "image": "http://127.0.0.1:4000/images/mac1.jpg",
+    "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTSLue8LnNkdqX0sUzljn1tjLqRK4qo0x8ZqiITufM6zuoafOHW16gUDZAlH6tIH_OnYp14OZluFaBYm_J5nI9xaBtSIu1BtdufZcdjBSYAxxRi3C-ouCscsV3zWzIjOjnJjw&usqp=CAc",
     "rating": { "rate": 4.5, "count": 999 }
   },
   {
@@ -14,7 +14,7 @@
     "price": 279.99,
     "description": "The amazing 15.4 inch Retina display of the Apple MacBook Pro A1398 notebook has a resolution of 2880 x 1800 pixels that offers the wide color gamut, fine contrast and sharp edges. You can perform your everyday tasks at lightning fast speeds as this Apple notebook features a 2 GHz quad-core i7 processor. Moreover, the 256 GB hard drive capacity of this MacBook allows you to store all your important data and media content.",
     "category": "Apple",
-    "image": "http://127.0.0.1:4000/images/mac2.jpg",
+    "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6473/6473765_sd.jpg",
     "rating": { "rate": 2.7, "count": 101 }
   },
   {
@@ -23,7 +23,7 @@
     "price": 799.99,
     "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
     "category": "Apple",
-    "image": "http://127.0.0.1:4000/images/mac3.jpg",
+    "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRa0kcqFnyHw7Cf0tW40UraNQ999TejLZFmgp53r1_Dtnlq_ezEkq3r84Xowx-HbCYNGuaoLO87xQv6crBSQA89Sh9J_XIK_g",
     "rating": { "rate": 4.8, "count": 559 }
   },
   {
@@ -32,7 +32,7 @@
     "price": 365.00,
     "description": "A groundbreaking Retina display. All-flash architecture. The latest Intel processors. Remarkably thin and light design. Together, these features take the notebook to a place it's never been. And they'll do the same for everything you create with it.",
     "category": "Apple",
-    "image": "http://127.0.0.1:4000/images/mac4.jpg",
+    "image": "https://reebelo.com/_next/image?url=https%3A%2F%2Fcdn.reebelo.com%2Fpim%2Fproducts%2FP-APPLEMACBOOKPRO201515I728GHZ%2FSIL-image-0.jpg&w=640&q=75",
     "rating": { "rate": 3.8, "count": 430 }
   },
   {
@@ -41,7 +41,7 @@
     "price": 849.99,
     "description": "From the moment you turn on your Inspiron, you’re greeted and connected to a whole new world. Whether it's social media, streaming movies, or finishing your work, Inspiron 14 2-in-1 laptop delivers what matters most to you, in style. Experience amazing visuals and audio in any mode. Features a 16:10 aspect ratio FHD+ display, Waves MaxxAudio Pro and the latest AMD Mobile Processors with Radeon Graphics",
     "category": "Dell",
-    "image": "http://127.0.0.1:4000/images/dell1.jpg",
+    "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6504/6504381cv1d.jpg",
     "rating": { "rate": 4.5, "count": 400 }
   },
   {
@@ -50,7 +50,7 @@
     "price": 279.99,
     "description": "The Dell Latitude 7390 2-in-1 Touchscreen Laptop is a powerful machine that is fully capable of any task. This features an 8th generation core i7 and two Thunderbolt 3 USB C ports of all your adapters. Dell's redesigned latitude entry into 2-in-1 is an all-around improvement in design, features and performance, making it one of the best in the category. The included NVMe PCIe SSD allows for superior speeds and fast booting to your essential programs.",
     "category": "Dell",
-    "image": "http://127.0.0.1:4000/images/dell2.jpg",
+    "image": "https://www.pcliquidations.com/images/items/dell-latitude-7390-13-3-2-in-1-touchscreen-laptop-i7-8650u-windows-10-grade-c.jpg",
     "rating": { "rate": 3.9, "count": 70 }
   },
   {
@@ -59,7 +59,7 @@
     "price": 550.00,
     "description": "This laptop was made to work! The Dell Precision 3520 Ultrabook Workstation takes on serious architecture, graphics, scientific, and engineering tasks with ease. It's powerful enough to emulate desktop performance and portable enough to be taken anywhere.",
     "category": "Dell",
-    "image": "http://127.0.0.1:4000/images/dell3.jpg",
+    "image": "https://i.ebayimg.com/images/g/ahsAAOSwnpRjWVXs/s-l500.jpg",
     "rating": { "rate": 3, "count": 400 }
   },
   {
@@ -68,7 +68,7 @@
     "price": 1391.99,
     "description": "Work confidently from anywhere on the world's smallest and lightest 15 inch premium commercial laptop. More premium choices provide an amazing screen experience, intelligent performance, built-in security, and privacy.",
     "category": "Dell",
-    "image": "http://127.0.0.1:4000/images/dell4.jpg",
+    "image": "https://ik.imagekit.io/ynt6srpvbhc/tr:t-true:cm-pad_resize,w-200,h-200,bg-FFFFFF/cimages/xl/418241.JPG",
     "rating": { "rate": 4.3, "count": 907 }
   },
   {
@@ -77,7 +77,7 @@
     "price": 1049.99,
     "description": "Whether it’s a touchscreen you prefer or a traditional display, the ThinkPad T14s Gen 2 laptop gives you a number of 14 inch screen choices based on your needs—and all options include thin bezels that enhance the display. Choose the low-power FHD panel for ultimate battery life, or go with the FHD wide-angle touchscreen. For refined details, increased brightness, and amazingly accurate colors, dramatic Dolby Vision™ IPS high-dynamic-range (HDR) technology is available on the 4K display.",
     "category": "Lenovo",
-    "image": "http://127.0.0.1:4000/images/lenovo1.jpg",
+    "image": "https://p1-ofp.static.pub/fes/cms/2022/03/18/juapa48402eiya29bo4v5gi5um9jgy633954.png",
     "rating": { "rate": 3.3, "count": 203 }
   },
   {
@@ -86,7 +86,7 @@
     "price": 539.99,
     "description": "AMD Ryzen™ 7 U Series Mobile Processors give the performance you need for content creation and productivity. 8GB LPDDR4x memory and 512GB PCle SSD storage offer faster read and write speeds, with storage for all of your files. Intelligent Cooling ensures cool temps and quiet fan noise; balance your sessions to optimize battery life or bolster performance with Lenovo's AI technology.",
     "category": "Lenovo",
-    "image": "http://127.0.0.1:4000/images/lenovo2.jpg",
+    "image": "https://p2-ofp.static.pub/ShareResource/na/products/ideapad/400x300/lenovo-ideapad-flex-5-amd-14inch-abyss-blue.png",
     "rating": { "rate": 2.9, "count": 470 }
   },
   {
@@ -95,7 +95,7 @@
     "price": 899.99,
     "description": "Multitasking speed powered by 12th Gen Intel® Core™ i5/i7 processors built on the Intel® Evo™ platform, with Windows 11 and a vibrant touchscreen. Sleek and beautiful, in your choice of size.¹ And battery life² for real life to do your thing your way all day. Surface Laptop 5 gives you the perfect balance to do it all.",
     "category": "HP",
-    "image": "http://127.0.0.1:4000/images/hp1.jpg",
+    "image": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE59By8?ver=1c41&q=90&m=6&h=270&w=270&b=%23FFFFFFFF&f=jpg&o=f&aim=true",
     "rating": { "rate": 4.8, "count": 319 }
   },
   {
@@ -104,7 +104,7 @@
     "price": 242.78,
     "description": "HP Elitebook 840 G3 Laptop Intel i5-6600U 2.6GHz, 8GB RAM, 512GB SSD, Windows 10 Pro",
     "category": "HP",
-    "image": "http://127.0.0.1:4000/images/hp2.jpg",
+    "image": "https://i.ebayimg.com/images/g/3wgAAOSwOWpkEeUT/s-l500.png",
     "rating": { "rate": 4.8, "count": 400 }
   }
 ]
