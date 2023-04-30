@@ -22,6 +22,13 @@ app.get("/", async (req, resp) => {
     resp.send(allProducts);
 });
 
+app.get("/:id", async (req, resp) => {
+    const id = req.params.id;
+    const query = { _id: id };
+    const oneProduct = await Product.findOne(query);
+    console.log(oneProduct);
+    resp.send(oneProduct);
+});
 
 
 app.post("/insert", async (req, res) => {
@@ -53,6 +60,29 @@ app.post("/insert", async (req, res) => {
     }
 });
 
+//New update post 
+app.put("/:id", async (req, res) => {
+    const id = req.params.id;
+    const query = { _id: id };
+    const { price } = req.body;
+
+    try {
+        const updatedProduct = await Product.findOneAndUpdate(
+            query,
+            { price },
+            { new: true }
+        );
+
+        const messageResponse = {
+            message: `Product ${id} price updated successfully`,
+            data: updatedProduct,
+        };
+        res.send(JSON.stringify(messageResponse));
+    } catch (err) {
+        console.log(`Error while updating product ${id} price: ${err}`);
+        res.status(500).send("Error while updating product price");
+    }
+});
 
 
 
