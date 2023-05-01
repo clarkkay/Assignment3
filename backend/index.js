@@ -32,12 +32,13 @@ app.get("/:id", async (req, resp) => {
 
 
 app.delete("/delete", async (req, res) => {
+    const p_id = req.body._id;
     console.log("Delete :", req.body);
     try {
-        const query = { _id: req.body._id };
+        const query = { _id: p_id };
         await Product.deleteOne(query);
         const messageResponse = {
-            message: `Product ${req.body._id} deleted correctly`,
+            message: `Product ${p_id} deleted correctly`,
         };
         res.send(JSON.stringify(messageResponse));
     } catch (err) {
@@ -71,6 +72,20 @@ app.post("/insert", async (req, res) => {
         res.send(JSON.stringify(messageResponse));
     } catch (err) {
         console.log("Error while adding a new product:" + err);
+    }
+});
+
+app.post("/update", async (req, res) => {
+    const p_id = req.body._id;
+    try {
+        const query = { _id: req.body._id};
+        await Product.updateOne(query);
+        const messageResponse = {
+            message: `Product ${p_id} price changed`,
+        };
+        res.send(JSON.stringify(messageResponse));
+    } catch (err) {
+        console.log("Error while changing :" + p_id + " " + err);
     }
 });
 

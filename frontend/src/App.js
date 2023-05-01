@@ -18,18 +18,18 @@ function App() {
       Title: {el.title} <br />
       Category: {el.category} <br />
       Price: {el.price} <br />
-      Rate :{el.rating.rate} and Count:{el.rating.count} <br />
+      Rate : {el.rating.rate} and Count: {el.rating.count} <br />
       </p>
     </div>
   ));
-  // new Product
+// new Product
   const [addNewProduct, setAddNewProduct] = useState({
     _id: 0,
     title: "",
     price: 0.0,
     description: "",
     category: "",
-    image: "http://127.0.0.1:4000/images/",
+    image: "link",
     rating: { rate: 0.0, count: 0 },
   });
 
@@ -40,15 +40,26 @@ function App() {
       Title: {el.title} <br />
       Category: {el.category} <br />
       Price: {el.price} <br />
-      Rate :{el.rating.rate} and Count:{el.rating.count} <br />
+      Rate : {el.rating.rate} and Count: {el.rating.count} <br />
       <br />
       </p>
-      <div id="updateButton">
-      <button>Update Price</button>
-      </div>
-      {/* onClick={() => updatePrice()} */}
+      <div>
+      <form onSubmit={handlePriceChangeSubmit}>
+        <label>
+          Product Price:
+          <input
+            type="text"
+            name="price"
+            value={product.price}
+            onChange={handlePriceChange}
+          />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
     </div>
   ));
+
   function getAllProducts() {
     fetch("http://localhost:4000/")
       .then((response) => response.json())
@@ -104,6 +115,39 @@ function App() {
         setAddNewProduct({ ...addNewProduct, image: temp });
       }
     }
+  }
+  //handlePriceChange trial
+  const [newPrice, setNewPrice] = useState(0.0);
+  function handlePriceChange(evt) {
+    const value = evt.target.value;
+    console.log(oneProduct, value);
+    setNewPrice(value);
+  }
+
+  // handle on submit for price change
+  function handlePriceChangeSubmit(e) {
+    e.preventDefault();
+    const newArr = {...oneProduct, rating: {...oneProduct.rating}};
+    console.log("arr", newArr);
+    newArr[0].price = newPrice;
+    setOneProduct([newArr]);
+    fetch("http://localhost:4000/update", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(oneProduct[0]),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Update price completed");
+        console.log(data);
+        if (data) {
+          //const keys = Object.keys(data);
+          const value = Object.values(data);
+          alert(value);
+        }
+        setOneProduct([]);
+      });
+    console.log(oneProduct);
   }
 
   function submitPrev() {
@@ -321,3 +365,6 @@ function App() {
   ); // return end
 } // App end
 export default App;
+
+{/* <input type="text" value={price} onChange={(e)=> {setPrice(e)}} /> */}
+{/* <button onClick={update}> */}
